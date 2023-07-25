@@ -1,4 +1,4 @@
-##Overview:
+## Overview:
 The YouTube Clone is a web application developed using React, Material UI, and integrated with the Rapid API to fetch video data. This clone aims to replicate some of the core features and functionalities of the popular video-sharing platform YouTube, allowing users to search for videos, view video details, and watch videos seamlessly.
 
 ## Disclaimer:
@@ -8,7 +8,7 @@ The main purpose of this project is to demonstrate my skills as a developer and 
 For production-level applications, appropriate testing, security measures, and optimizations should be applied before deployment to ensure a reliable and robust user experience.
 
 
-##Features:
+## Features:
 1.Search for videos on a wide range of topics.
 2.View video thumbnails, titles, and channel information.
 3.Play videos directly within the application's interface.
@@ -16,7 +16,7 @@ For production-level applications, appropriate testing, security measures, and o
 5.User-friendly and responsive design, suitable for various screen sizes.
 
 
-##Installation Instructions:
+## Installation Instructions:
 Clone this repository to your local machine: git clone https://github.com/your-username/youtube-clone.git
 Navigate to the project directory: cd youtube-clone
 Install the dependencies: npm install
@@ -27,10 +27,10 @@ Start the development server: npm start
 The application should now be running on http://localhost:3000.
 
 
-##Technologies Used:
+## Technologies Used:
 React: A JavaScript library for building user interfaces.
 Material UI: A popular UI component library for React applications.
 Rapid API: An API marketplace that provides access to various APIs, including the YouTube API used for this application.
 
-##Contact Information:
+## Contact Information:
 For any questions or issues, feel free to contact me at jose.rivas537549@gmail.com
