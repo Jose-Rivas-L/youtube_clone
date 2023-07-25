@@ -7,6 +7,9 @@ This project was developed as a personal practice exercise and is not intended t
 The main purpose of this project is to demonstrate my skills as a developer and to serve as a portfolio piece. Please use this application with this understanding and feel free to reach out if you have any questions or feedback.
 For production-level applications, appropriate testing, security measures, and optimizations should be applied before deployment to ensure a reliable and robust user experience.
 
+## Demo Link:
+
+https://youttube-clone.netlify.app
 
 ## Features:
 1.Search for videos on a wide range of topics.
