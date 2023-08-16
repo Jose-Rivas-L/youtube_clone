@@ -3,12 +3,14 @@ import { Link, useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { Typography, Stack, Box } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { Videos } from "./";
+import { VideoComment, Videos } from "./";
 import { fetchFromAPI } from "../Utils/fetchFromAPI";
+import { CommentCard } from "./";
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
+  const [comments, setComments] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
@@ -18,6 +20,9 @@ const VideoDetail = () => {
 
     fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
       (data) => setVideos(data.items)
+    );
+    fetchFromAPI(`commentThreads?part=snippet&videoId=${id}`).then((data) =>
+      setComments(data.items)
     );
   }, [id]);
 
@@ -30,7 +35,7 @@ const VideoDetail = () => {
     <Box minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>
         <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
+          <Box sx={{ width: "100%", top: "86px" }}>
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
               className="react-player"
@@ -66,6 +71,18 @@ const VideoDetail = () => {
                   {parseInt(likeCount).toLocaleString()} likes
                 </Typography>
               </Stack>
+            </Stack>
+            <Stack
+              gap="20px"
+              justifyContent="start"
+              direction="column"
+              py={2}
+              px={2}
+            >
+              <Typography variant="h6" sx={{ color: "white" }}>
+                Comments
+              </Typography>
+              {comments ? <VideoComment comments={comments}/> : null}
             </Stack>
           </Box>
         </Box>
