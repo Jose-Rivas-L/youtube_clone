@@ -20,7 +20,7 @@ https://youttube-clone.netlify.app
 
 
 ## Installation Instructions:
-Clone this repository to your local machine: git clone https://github.com/your-username/youtube-clone.git
+Clone this repository to your local machine: git clone https://github.com/Jose-Rivas-L/youtube-clone.git
 Navigate to the project directory: cd youtube-clone
 Install the dependencies: npm install
 Obtain an API key from Rapid API by signing up and subscribing to their YouTube API service.
